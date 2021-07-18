@@ -1,0 +1,22 @@
+{
+  "name": "electron-chromium-comparison",
+  "version": "1.0.0",
+  "description": "There is poor 2D Canvas performance issue in electron but not reproducible in chromium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madnesspie/electron-chromium-comparison.git"
+  },
+  "author": "Alexander Polishchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madnesspie/electron-chromium-comparison/issues"
+  },
+  "homepage": "https://github.com/madnesspie/electron-chromium-comparison#readme",
+  "dependencies": {
+    "electron": "^13.1.7"
+  }
+}
