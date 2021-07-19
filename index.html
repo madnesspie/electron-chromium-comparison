@@ -9,21 +9,15 @@
             const canvas = document.getElementById('canvas');
             if (canvas.getContext) {
                 const ctx = canvas.getContext('2d');
-
-                setInterval(
-                    () => {
-                        for (let i = 0; i < 5000; i++) {
-                            ctx.fillStyle = `rgba(${rndBtw(1, 200)}, ${rndBtw(1, 200)}, ${rndBtw(1, 200)}, 0.5)`;
-                            ctx.fillRect(
-                                rndBtw(1, 1920),
-                                rndBtw(1, 1080),
-                                rndBtw(1, 1920),
-                                rndBtw(1, 1080),
-                            );
-                        }
-                    },
-                    100
-                )
+                for (let i = 0; i < 100000; i++) {
+                    ctx.fillStyle = `rgba(${rndBtw(1, 200)}, ${rndBtw(1, 200)}, ${rndBtw(1, 200)}, 0.5)`;
+                    ctx.fillRect(
+                        rndBtw(1, 1920),
+                        rndBtw(1, 1080),
+                        rndBtw(1, 1920),
+                        rndBtw(1, 1080),
+                    );
+                }
             }
         }
     </script>
@@ -32,6 +26,6 @@
     </style>
   </head>
   <body onload="draw();">
-    <canvas id="canvas" width="1920" height="1080"></canvas>
+    <canvas id="canvas" width="1920px" height="1080px"></canvas>
   </body>
 </html>
